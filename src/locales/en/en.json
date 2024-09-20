@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "title": "Raymond Luk Law",
+    "subtitle": "Legal Excellence, Personalized Service",
+    "about": [
+      {"icon": "<FaAward />"}
+    ],
+    "links": [
+      { "key": "home", "label": "Home", "url": "/" },
+      { "key": "about", "label": "About", "url": "/about" },
+      { "key": "services", "label": "Services",
+        "dropdown": [
+          { "key": "overview", "label": "Overview", "url": "/services"},
+          { "key": "real-estate-law", "label": "Real Estate Law", "url": "/real-estate-law"},
+          { "key": "family-law", "label": "Family Law", "url": "/family-law"},
+          { "key": "will-estates", "label": "Will & Estates", "url": "/wills-and-estates"},
+          { "key": "personal-injury-law", "label": "Personal Injury Law", "url": "/personal-injury-law"},
+          { "key": "immigration-law", "label": "Immigration Law", "url": "/immigration-law"},
+          { "key": "corporate-law", "label": "Corporate Law", "url": "/corporate-law"},
+          { "key": "other-services", "label": "Other Services", "url": "/other-services"}
+        ]
+      },
+      { "key": "blog", "label": "Blogs", "url": "/blog" },
+      { "key": "tools", "label": "Tools", "url": "/tools" },
+      { "key": "contact", "label": "Contact", "url": "/contact" },
+      {"key": "language", "label": "Language", "dropdown": [
+        { "key": "en", "label": "English", "icon": "<RiEnglishInput />" },
+        { "key": "zh", "label": "中文", "icon": "<HiOutlineLanguage /> "}
+      ]}
+    ],
+    "language": {
+      "label": "Language",
+      "options": [
+        { "key": "en", "label": "English", "icon": "<RiEnglishInput />" },
+        { "key": "zh", "label": "中文", "icon": "<HiOutlineLanguage /> "}
+      ]
+    }
+  },
+  "header": {
+    "intro": [
+      {"key": "experience", "text": "Experience", "desc": "3+ Years Working" },
+      {"key": "rate", "text": "Rate", "desc": "Starts from $xxx per hour"},
+      {"key": "clients", "text": "Clients", "desc": "100+ happy clients"}
+    ]
+  },
+  "services": {
+    "title": "Areas of Practice",
+    "subtitle": "I give you the best in all the services below"
+  },
+  "tools": [
+    { "key": "mortgage-calculator", "label": "Mortgage Calculator", "url": "/tools/mortgage-calculator", "desc": "More information to come." },
+    { "key": "land-transfer-tax", "label": "Land Transfer Tax", "url": "/tools/land-transfer-tax", "desc": "More information to come." },
+    { "key": "title-insurance", "label": "Title Insurance", "url": "/tools/title-insurance", "desc": "More information to come." },
+    { "key": "power-of-sale", "label": "Power of Sale", "url": "/tools/power-of-sale", "desc": "More information to come." },
+    { "key": "wills-estates", "label": "Wills & Estates", "url": "/tools/wills-estates", "desc": "More information to come." },
+    { "key": "spousal-support", "label": "Spousal Support", "url": "/tools/spouse-support", "desc": "More information to come." }
+  ]
+}

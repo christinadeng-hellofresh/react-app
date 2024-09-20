@@ -1,0 +1,49 @@
+{
+    "navbar": {
+      "title": "Raymond Luk Law",
+      "subtitle": "Professional Corporation",
+      "desc": "Legal Excellence, Personalized Service",
+      "aboutTitle": "Why Choose Us",
+      "about": [
+        { "icon": "AiOutlineLike", "title": "Experience", "desc": "5+ Years Working"},
+        { "icon": "AiOutlineDollarCircle", "title": "Rate", "desc": "Lowest Rate in GTA"},
+        { "icon": "AiOutlineTeam", "title": "Clients", "desc": "100+ happy clients"}
+      ],
+      "googleDoc": {
+        "title": "New Client Register",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
+      },
+      "links": [
+        { "key": "home", "label": "Home", "url": "/", "icon": "AiOutlineHome"},
+        { "key": "about", "label": "About", "url": "/about", "icon": "AiOutlineInfoCircle"},
+        {
+          "key": "services",
+          "label": "Services",
+          "icon": "AiOutlineAudit",
+          "dropdown": [
+            { "key": "overview", "label": "Overview", "url": "/services" },
+            { "key": "real-estate-law", "label": "Real Estate Law", "url": "/real-estate-law"},
+            { "key": "family-law", "label": "Family Law", "url": "/family-law" },
+            { "key": "will-estates", "label": "Will & Estates", "url": "/wills-and-estates"},
+            { "key": "personal-injury-law", "label": "Personal Injury Law", "url": "/personal-injury-law" },
+            { "key": "immigration-law", "label": "Immigration Law", "url": "/immigration-law"},
+            { "key": "corporate-law", "label": "Corporate Law", "url": "/corporate-law"},
+            { "key": "other-services", "label": "Other Services", "url": "/other-services"}
+          ]
+        },
+        { "key": "blog", "label": "Blogs", "url": "/blog", "icon": "AiOutlineRead"},
+        { "key": "tools", "label": "Tools", "url": "/tools", "icon": "AiOutlineTool"},
+        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineComment"},
+        {
+          "key": "language",
+          "label": "Language",
+          "icon": "AiOutlineTranslation",
+          "dropdown": [
+            { "key": "en", "label": "English"},
+            { "key": "zh", "label": "中文"}
+          ]
+        }
+      ]
+    }
+  }
+  

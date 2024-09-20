@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "title": "雷蒙德·陆律师",
+    "subtitle": "事务所",
+    "desc": "卓越的法律服务，个性化的服务",
+    "aboutTitle": "为什么选择我们",
+    "about": [
+      { "icon": "AiOutlineLike", "title": "经验", "desc": "5年以上工作经验" },
+      { "icon": "AiOutlineDollarCircle", "title": "价格", "desc": "大多伦多地区最低价格" },
+      { "icon": "AiOutlineTeam", "title": "客户", "desc": "100+满意客户" }
+    ],
+    "googleDoc": {
+        "title": "新客户注册",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
+      },
+    "links": [
+      { "key": "home", "label": "首页", "url": "/", "icon": "AiOutlineHome"},
+      { "key": "about", "label": "关于我们", "url": "/about", "icon": "AiOutlineInfoCircle"},
+      {
+        "key": "services",
+        "label": "服务",
+        "icon": "AiOutlineAudit",
+        "dropdown": [
+          { "key": "overview", "label": "概述", "url": "/services" },
+          { "key": "real-estate-law", "label": "房地产法", "url": "/real-estate-law" },
+          { "key": "family-law", "label": "家庭法", "url": "/family-law" },
+          { "key": "will-estates", "label": "遗嘱和遗产", "url": "/wills-and-estates" },
+          { "key": "personal-injury-law", "label": "人身伤害法", "url": "/personal-injury-law" },
+          { "key": "immigration-law", "label": "移民法", "url": "/immigration-law" },
+          { "key": "corporate-law", "label": "公司法", "url": "/corporate-law" },
+          { "key": "other-services", "label": "其他服务", "url": "/other-services" }
+        ]
+      },
+      { "key": "blog", "label": "博客", "url": "/blog", "icon": "AiOutlineRead"},
+      { "key": "tools", "label": "工具", "url": "/tools", "icon": "AiOutlineTool"},
+      { "key": "contact", "label": "联系我们", "url": "/contact", "icon": "AiOutlineComment"},
+      {
+        "key": "language",
+        "label": "语言",
+        "icon": "AiOutlineTranslation",
+        "dropdown": [
+          { "key": "en", "label": "English"},
+          { "key": "zh", "label": "中文"}
+        ]
+      }
+    ]
+  }
+}
+  
+  

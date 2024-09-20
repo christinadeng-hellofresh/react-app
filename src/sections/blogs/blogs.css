@@ -1,0 +1,25 @@
+.blog__container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.blog__container a:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transform: translateY(-0.5rem);
+}
+
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .blog__container {
+        gap: 1.5rem;
+    }
+}

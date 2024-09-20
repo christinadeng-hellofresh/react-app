@@ -1,0 +1,31 @@
+{
+  "title": "Frequently Asked Questions",
+  "subtitle": "Here are some questions I usually get. Click to toggle the answer!",
+  "faqs": [
+    {
+      "question": "What type of cases does your law firm handle?",
+      "answer": "Our law firm specializes in various practice areas, including personal injury, family law, wills & estates, real estate, and notary services. Whether you're facing legal challenges related to accidents, divorce, property transactions, or related disputes, we have the expertise to provide effective representation and guidance."
+    },
+    {
+      "question": "How much does it cost to hire your law firm?",
+      "answer": "At our law firm, we understand that every case is unique, and we offer flexible fee structures tailored to our clients' needs. During your initial consultation, we'll discuss your case in detail and provide transparent information about our fees and payment options. We strive to ensure that our legal services are accessible and affordable for our clients."
+    },
+    {
+      "question": "What should I expect during the legal process?",
+      "answer": "The legal process can vary depending on the nature of your case, but we'll guide you through each step and keep you informed at every stage. From gathering evidence and filing paperwork to negotiating settlements or representing you in court, our experienced lawyers will work diligently to achieve the best possible outcome for your case."
+    },
+    {
+      "question": "When is it a good time to make a will?",
+      "answer": "It's always a good time to make a will, regardless of your age or current life circumstances. However, certain life events may prompt the need to create or update your will, such as getting married, having children, buying a home, or experiencing changes in your health or financial situation. Additionally, if you already have a will, it's crucial to review and update it after significant life changes like divorce or the death of a loved one."
+    },
+    {
+      "question": "What should I bring to my initial consultation?",
+      "answer": "For your initial consultation, it's helpful to bring any relevant documents or information related to your case, such as contracts, correspondence, medical records, or financial statements. This allows our lawyer to assess your situation thoroughly and provide informed guidance on the next steps. MOST IMPORTANTLY, please bring two pieces of government identification (Health card is NOT a valid government ID)."
+    },
+    {
+      "question": "What steps should I take if I've been involved in an accident?",
+      "answer": "If you've been involved in an accident, it's essential to prioritize your health and safety first. Seek medical attention for any injuries and report the accident to the appropriate authorities. Additionally, gather as much information as you can about the accident, including the name and contact information of parties involved, and the address where the accident had occurred. Finally, contact our law firm as soon as possible to discuss your legal rights and options for pursuing compensation for your injuries and damages."
+    }
+  ]
+}
+  

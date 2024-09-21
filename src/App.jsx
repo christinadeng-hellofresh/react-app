@@ -12,7 +12,7 @@ import ToolsPage from "./pages/Tools";
 
 const App = () => {
   return (
-    <Router basename="/react-app">
+    <Router basename="/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,12 +1,12 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
+import { ModalProvider } from "./context/modal-context";
 import "./index.css";
 import "./i18n.js";
 
-ReactDOM.render(
-  <BrowserRouter basename="/react-app">
+const root = ReactDOM.createRoot(document.querySelector("#root"));
+root.render(
+  <ModalProvider>
     <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+  </ModalProvider>
 );

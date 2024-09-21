@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./sections/home/Navbar";
 import FooterHome from "./sections/footer/Footer";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ import ToolsPage from "./pages/Tools";
 
 const App = () => {
   return (
-    <>
+    <Router basename="/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/other-services" element={<LawPage />} />
       </Routes>
       <FooterHome />
-    </>
+    </Router>
   );
 };
 

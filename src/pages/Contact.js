@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 import Contact from "../sections/contact/Contact";
 
 export default function ContactPage() {

@@ -1,8 +1,4 @@
 import { Tabs } from "flowbite-react";
-import { HiAdjustments, HiClipboardList, HiUserCircle } from "react-icons/hi";
-import { MdDashboard } from "react-icons/md";
-import data from "./data";
-import image from "../../assets/about.jpg";
 import { CiBookmarkCheck } from "react-icons/ci";
 import "./tabs.css";
 import { Accordion } from "flowbite-react";

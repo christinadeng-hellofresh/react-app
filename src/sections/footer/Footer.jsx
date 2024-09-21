@@ -1,4 +1,4 @@
-import { links, socials, footer } from "./data";
+import { footer } from "./data";
 import "./footer.css";
 
 import { Footer } from "flowbite-react";

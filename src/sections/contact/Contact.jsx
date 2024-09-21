@@ -1,7 +1,4 @@
-import contacts from "./data";
 import "./contact.css";
-import TimeTable from "./TimeTable";
-import Image from "../../assets/process.png";
 import Form from "./Form";
 
 const Contact = () => {

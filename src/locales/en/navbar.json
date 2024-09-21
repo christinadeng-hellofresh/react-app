@@ -14,15 +14,15 @@
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSc3wQK4mW8BakKnu6rbzLc1uc2u0j5bAn60iAi8M2_x4R6bQA/viewform?usp=sf_link"
       },
       "links": [
-        { "key": "home", "label": "Home", "url": "/react-app", "icon": "AiOutlineHome"},
-        { "key": "about", "label": "About", "url": "/react-app/about", "icon": "AiOutlineInfoCircle"},
+        { "key": "home", "label": "Home", "url": "/", "icon": "AiOutlineHome"},
+        { "key": "about", "label": "About", "url": "/about", "icon": "AiOutlineInfoCircle"},
         {
           "key": "services",
           "label": "Services",
           "icon": "AiOutlineAudit",
           "dropdown": [
-            { "key": "overview", "label": "Overview", "url": "react-app/services" },
-            { "key": "real-estate-law", "label": "Real Estate Law", "url": "react-app/real-estate-law"},
+            { "key": "overview", "label": "Overview", "url": "/services" },
+            { "key": "real-estate-law", "label": "Real Estate Law", "url": "/real-estate-law"},
             { "key": "family-law", "label": "Family Law", "url": "/family-law" },
             { "key": "will-estates", "label": "Will & Estates", "url": "/wills-and-estates"},
             { "key": "personal-injury-law", "label": "Personal Injury Law", "url": "/personal-injury-law" },
@@ -31,9 +31,9 @@
             { "key": "other-services", "label": "Other Services", "url": "/other-services"}
           ]
         },
-        { "key": "blog", "label": "Blogs", "url": "/react-app/blog", "icon": "AiOutlineRead"},
-        { "key": "tools", "label": "Tools", "url": "/react-app/tools", "icon": "AiOutlineTool"},
-        { "key": "contact", "label": "Contact", "url": "/react-app/contact", "icon": "AiOutlineComment"},
+        { "key": "blog", "label": "Blogs", "url": "/blog", "icon": "AiOutlineRead"},
+        { "key": "tools", "label": "Tools", "url": "/tools", "icon": "AiOutlineTool"},
+        { "key": "contact", "label": "Contact", "url": "/contact", "icon": "AiOutlineComment"},
         {
           "key": "language",
           "label": "Language",

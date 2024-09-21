@@ -47,7 +47,7 @@ const TeamAbout = () => {
         >
           <img
             src={images[member.image]}
-            alt="Card Image"
+            alt="card"
             className="w-full md:w-1/3 object-contain"
           />
 

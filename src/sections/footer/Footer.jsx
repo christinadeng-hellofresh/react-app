@@ -21,7 +21,10 @@ const FooterHome = () => {
               <Footer.Brand src={footerData.icon} alt="Law Society" />
             </div>
             <div className="flex">
-              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=HSBC%20Tower,%20Liberty%20Square%203601%20Highway%207,%20Unit%20803%20Markham,%20ON%20L3R%200M3+(Raymond%20Luk%20Law)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+              <iframe
+                title="map"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=HSBC%20Tower,%20Liberty%20Square%203601%20Highway%207,%20Unit%20803%20Markham,%20ON%20L3R%200M3+(Raymond%20Luk%20Law)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
             </div>
           </div>
           <div className="flex sm:flex-col md:flex-row">

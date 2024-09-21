@@ -39,7 +39,10 @@ const TeamCard = ({ member }) => {
 
   return (
     <div className="text-center p-4 relative group">
-      <a onClick={() => setOpenModal(!openModal)} rel="noopener noreferrer">
+      <button
+        onClick={() => setOpenModal(!openModal)}
+        rel="noopener noreferrer"
+      >
         <div className="relative text-center w-52 h-52 sm:w-40 sm:h-40 mx-auto">
           <img
             src={images[member.image]}
@@ -56,7 +59,7 @@ const TeamCard = ({ member }) => {
         <p className="text-xs text-gray-500 tracking-tight italic font-light underline">
           {member.position}
         </p>
-      </a>
+      </button>
       <Modal
         show={openModal}
         onClose={() => setOpenModal(!openModal)}

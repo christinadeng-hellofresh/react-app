@@ -6,7 +6,7 @@ export default function LawPage() {
   const path = window.location.pathname;
   const { t } = useTranslation("services");
   const services = t("services", { returnObjects: true });
-  const service = services.find((service) => service.path == path);
+  const service = services.find((service) => service.path === path);
 
   return (
     <main className="pt-32 px-8">

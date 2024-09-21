@@ -1,7 +1,7 @@
 import { Button, Card } from "flowbite-react";
 import { useTranslation } from "react-i18next";
 
-const Tools = ({}) => {
+const Tools = () => {
   const { t } = useTranslation("main");
   const tools = t("tools", { returnObjects: true });
 

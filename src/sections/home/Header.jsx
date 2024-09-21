@@ -51,13 +51,13 @@ const Header = () => {
           {navbar.desc}
         </p>
         <div className="pt-10" data-aos="fade-down">
-          <a
+          <button
             target="_blank"
             href={navbar.googleDoc.url}
             className="text-sm border-2 border-white border-double p-4 text-white font-extralight"
           >
             {navbar.googleDoc.title}
-          </a>
+          </button>
         </div>
       </div>
     </header>

@@ -13,7 +13,7 @@ const About = () => {
     >
       <div className="about__left">
         <div className="about__portrait">
-          <img src={AboutImage} alt="About Image" />
+          <img src={AboutImage} alt="about-image" />
         </div>
       </div>
       <div className="about__right">
@@ -55,7 +55,7 @@ const About = () => {
           a consultation and learn more about how we can assist you with your
           legal needs.
         </p>
-        <a className="btn primary">Get in touch today</a>
+        <button className="btn primary">Get in touch today</button>
       </div>
     </div>
   );

@@ -20,22 +20,22 @@ export default function Home() {
     setShowFloatingNav(false);
   };
 
-  // check if floating nav should be shown or hidden
-  const floatingNavToggleHandler = () => {
-    // check if we scrolled up or down at least 20px
-    if (
-      siteYPostion < mainRef?.current?.getBoundingClientRect().y - 20 ||
-      siteYPostion > mainRef?.current?.getBoundingClientRect().y + 20
-    ) {
-      showFloatingNavHandler();
-    } else {
-      hideFloatingNavHandler();
-    }
-
-    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
-  };
-
   useEffect(() => {
+    // check if floating nav should be shown or hidden
+    const floatingNavToggleHandler = () => {
+      // check if we scrolled up or down at least 20px
+      if (
+        siteYPostion < mainRef?.current?.getBoundingClientRect().y - 20 ||
+        siteYPostion > mainRef?.current?.getBoundingClientRect().y + 20
+      ) {
+        showFloatingNavHandler();
+      } else {
+        hideFloatingNavHandler();
+      }
+
+      setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
+    };
+
     const checkYPosition = setInterval(floatingNavToggleHandler, 2000);
 
     // cleanup function

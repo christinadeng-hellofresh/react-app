@@ -12,7 +12,7 @@ import ToolsPage from "./pages/Tools";
 
 const App = () => {
   return (
-    <Router basename="/">
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/other-services" element={<LawPage />} />
       </Routes>
       <FooterHome />
-    </Router>
+    </>
   );
 };
 

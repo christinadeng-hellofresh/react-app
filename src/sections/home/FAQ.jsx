@@ -2,18 +2,23 @@ import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import Card from "../../components/Card";
 
-const FAQ = ({ faq }) => {
-  const [showAnswer, setShowAnswer] = useState(false);
+const FAQ = ({ faq, isOpen }) => {
+  const [showAnswer, setShowAnswer] = useState(isOpen);
 
   return (
-    <Card className="opacity-80" onClick={() => setShowAnswer((prev) => !prev)}>
-      <div className="flex justify-between items-start gap-8">
-        <p className="font-semibold text-base">{faq.question}</p>
+    <Card
+      className={showAnswer ? "h-full" : ""}
+      onClick={() => setShowAnswer((prev) => !prev)}
+    >
+      <div className="flex justify-between items-start gap-8 text-gray-200">
+        <p className="font-medium text-base">{faq.question}</p>
         <button className="text-2xl">
           {showAnswer ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </div>
-      {showAnswer && <p className="mt-4 italic font-light">{faq.answer}</p>}
+      {showAnswer && (
+        <p className="mt-4 italic font-light text-gray-200">{faq.answer}</p>
+      )}
     </Card>
   );
 };

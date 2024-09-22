@@ -43,12 +43,11 @@ const Services = () => {
     });
   };
   return (
-    <div
-      className="relative flex flex-col items-center py-24 relative bg-white shadow-lg"
-      data-aos="fade-left"
-    >
+    <div className="relative flex flex-col items-center py-24 relative bg-white shadow-lg relative z-10">
       <h3 className="pb-4">{title}</h3>
-      <p className="italic pb-8 antialiased tracking-tight">{subtitle}</p>
+      <p className="italic pb-8 antialiased tracking-tight px-8 text-center">
+        {subtitle}
+      </p>
       <button
         onClick={scrollLeft}
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300"
@@ -58,21 +57,23 @@ const Services = () => {
         <AiOutlineLeft size={24} />
       </button>
       <div
-        className="flex overflow-x-auto whitespace-nowrap gap-8 w-full px-6 py-20 opacity-80"
+        className="flex overflow-x-auto whitespace-nowrap gap-8 w-full px-6 py-20"
         style={{
           scrollBehavior: "smooth",
         }}
         ref={carouselRef}
+        data-aos="fade-left"
       >
         {services.map((service, index) => (
           <a
             href={service.path}
             key={index}
-            className="block w-full sm:w-80 bg-white shadow-lg rounded-lg flex-shrink-0 transition-transform duration-300 ease-in-out hover:-translate-y-2"
+            className="block w-full sm:w-80 shadow-lg rounded-lg flex-shrink-0 transition-transform duration-300 ease-in-out hover:-translate-y-2"
             style={{
               boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
               borderRadius: "15px",
-              background: "linear-gradient(to top left, #3C5B6F, #A0C4D8)",
+              // background: "linear-gradient(to top left, #3C5B6F, #A0C4D8)",
+              background: "#3C5B6F",
             }}
           >
             <img
@@ -81,8 +82,8 @@ const Services = () => {
               className="w-full h-48 object-cover rounded-t-lg"
             />
             <div className="p-4">
-              <h4 className="font-semibold">{service.title}</h4>
-              <ul className="text-black text-sm mt-2">
+              <h4 className="font-semibold text-gray-200">{service.title}</h4>
+              <ul className="text-sm mt-2 text-gray-200">
                 {service.tabs.map((tab, i) => (
                   <li
                     key={i}

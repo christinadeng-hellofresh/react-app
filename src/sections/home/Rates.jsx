@@ -6,9 +6,9 @@ import {
 import { useTranslation } from "react-i18next";
 
 const iconMap = {
-  AiOutlineLike: <AiOutlineLike size={32} />,
-  AiOutlineTeam: <AiOutlineTeam size={32} />,
-  AiOutlineDollarCircle: <AiOutlineDollarCircle size={32} />,
+  AiOutlineLike: <AiOutlineLike size={42} />,
+  AiOutlineTeam: <AiOutlineTeam size={42} />,
+  AiOutlineDollarCircle: <AiOutlineDollarCircle size={42} />,
 };
 
 const Rates = () => {
@@ -17,12 +17,19 @@ const Rates = () => {
   const navbar = t("navbar", { returnObjects: true });
 
   return (
-    <div className="flex flex-col items-center bg-gray-100 py-16 shadow-lg md:py-32">
-      <h3 className="pb-3">{navbar.aboutTitle}</h3>
-      <div className="flex text-center flex-col md:flex-row">
+    <div className="flex flex-col items-center justify-center text-center bg-gray-100 py-16 shadow-lg relative z-10 md:py-32">
+      <h3 className="pb-16">{navbar.aboutTitle}</h3>
+      <div
+        className="flex flex-col md:flex-row"
+        data-aos="flip-down"
+        data-aos-duration="2000"
+      >
         {navbar.about.map((item) => (
           <div key={item.title} className="my-6 md:mx-10 lg:mx-20">
-            <span className="about__card-icon">{iconMap[item.icon]}</span>
+            {/* Wrapping the icon with a div and using Flexbox to center */}
+            <div className="flex items-center justify-center mb-4">
+              <span className="about__card-icon">{iconMap[item.icon]}</span>
+            </div>
             <h5 className="pb-2">{item.title}</h5>
             <p className="text-xs antialiased italic">{item.desc}</p>
           </div>

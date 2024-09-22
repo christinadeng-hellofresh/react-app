@@ -56,32 +56,35 @@ const TeamCard = ({ member }) => {
           </div>
         </div>
         <h4 className="mt-4 mb-2 font-semibold tracking-wide">{member.name}</h4>
-        <p className="text-xs text-gray-500 tracking-tight italic font-light underline">
+        <p className="text-sm text-gray-500 tracking-tight italic font-light underline">
           {member.position}
         </p>
       </button>
+
       <Modal
         show={openModal}
         onClose={() => setOpenModal(!openModal)}
-        className="backdrop-filter backdrop-blur-lg"
+        className="backdrop-blur-lg max-w-full overflow-hidden"
       >
         <Modal.Header className="shadow-2xl">
           {heading.meet} {member.name.split(" ")[0]}
         </Modal.Header>
-        <Modal.Body className="flex justify-center shadow-2xl rounded-lg p-6">
-          <div className="w-full border border-blue-500 rounded-lg shadow-xl p-6">
+        <Modal.Body className="flex justify-center shadow-2xl rounded-lg p-4 max-h-screen overflow-y-auto w-full">
+          <div className="w-full max-w-full md:max-w-[500px] border border-blue-500 rounded-lg md:shadow-lg p-4">
             <div className="flex flex-col items-center pb-4">
               <img
-                className="w-1/3 h-1/3 mb-3 rounded-full shadow-lg border-2 border-white"
+                className="w-3/4 h-3/4 md:w-1/3 md:h-1/3 mb-3 rounded-full shadow-lg border-2 border-white"
                 src={images[member.image]}
                 alt={member.name}
               />
-              <h5 className="mb-1 text-xl font-medium">{member.name}</h5>
-              <span className="text-sm italic underline">
+              <h5 className="mb-1 text-lg md:text-xl font-medium text-center">
+                {member.name}
+              </h5>
+              <span className="text-sm italic underline text-center">
                 {member.position}
               </span>
               <div
-                className="text-sm p-4"
+                className="text-sm p-4 text-center break-words"
                 dangerouslySetInnerHTML={{ __html: member.description }}
               />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 w-full">
@@ -91,7 +94,7 @@ const TeamCard = ({ member }) => {
                       <HiOutlineAcademicCap className="inline mr-2" />{" "}
                       {heading.education}
                     </h5>
-                    <ul className="list-disc pl-5 text-sm mt-2">
+                    <ul className="list-disc pl-5 text-sm mt-2 break-words">
                       {member.education.map((edu, index) => (
                         <li key={index}>{edu}</li>
                       ))}
@@ -106,13 +109,23 @@ const TeamCard = ({ member }) => {
                   {member.phone?.length > 0 && (
                     <p className="text-sm flex items-center mb-3">
                       <HiOutlinePhone className="inline mr-2" />
-                      {member.phone.join(", ")}
+                      <a
+                        href={`tel:${member.phone[0]}`}
+                        className="underline break-words"
+                      >
+                        {member.phone.join(", ")}
+                      </a>
                     </p>
                   )}
                   {member.email && (
                     <p className="text-sm flex items-center">
                       <HiOutlineMail className="inline mr-2" />
-                      {member.email}
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="underline break-words"
+                      >
+                        {member.email}
+                      </a>
                     </p>
                   )}
                 </div>

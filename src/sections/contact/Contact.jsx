@@ -1,4 +1,4 @@
-import { Timeline } from "flowbite-react";
+import { Timeline, Table } from "flowbite-react";
 import {
   HiOutlineCalendar,
   HiOutlineLightBulb,
@@ -33,7 +33,7 @@ const Contact = () => {
       </div>
 
       {/* Process Section */}
-      <div className="w-full py-24 shadow-lg relative z-10">
+      <div className="w-full py-48 shadow-lg relative z-10 bg-gray-100">
         <h2 className="text-center text-2xl font-bold mb-8 p-8">Our Process</h2>
         <div className="flex justify-center">
           {/* Horizontal timeline on desktop, vertical on mobile */}
@@ -129,6 +129,84 @@ const Contact = () => {
               </Timeline.Content>
             </Timeline.Item>
           </Timeline>
+        </div>
+      </div>
+
+      <div className="w-full py-24 shadow-lg">
+        <h2 className="text-center text-2xl font-bold mb-8 p-8">
+          Office Hours
+        </h2>
+        <div className="flex justify-center">
+          <div className="w-full max-w-6xl bg-white rounded-lg p-8 flex">
+            {/* Office Hours Table Column */}
+            <div className="w-2/3 pr-4 ">
+              <Table>
+                <Table.Head>
+                  <Table.HeadCell
+                    className="text-white"
+                    style={{
+                      background: "#3C5B6F",
+                    }}
+                  >
+                    Day
+                  </Table.HeadCell>
+                  <Table.HeadCell
+                    className="text-white"
+                    style={{
+                      background: "#3C5B6F",
+                    }}
+                  >
+                    Office Hours
+                  </Table.HeadCell>
+                </Table.Head>
+                <Table.Body className="divide-y">
+                  <Table.Row>
+                    <Table.Cell>Monday</Table.Cell>
+                    <Table.Cell>9:00 AM - 5:00 PM</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Tuesday</Table.Cell>
+                    <Table.Cell>9:00 AM - 5:00 PM</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Wednesday</Table.Cell>
+                    <Table.Cell>9:00 AM - 5:00 PM</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Thursday</Table.Cell>
+                    <Table.Cell>9:00 AM - 5:00 PM</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Friday</Table.Cell>
+                    <Table.Cell>9:00 AM - 5:00 PM</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Saturday</Table.Cell>
+                    <Table.Cell>Closed</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Sunday</Table.Cell>
+                    <Table.Cell>Closed</Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </div>
+
+            {/* Additional Information Column */}
+            <div className="w-1/3 pl-4">
+              <h3 className="text-xl font-bold mb-4">Additional Information</h3>
+              <p className="text-gray-600">
+                Please note that appointments are available both in-person and
+                virtually. You can schedule your consultation via our contact
+                form or call us directly during office hours.
+              </p>
+              <p className="mt-4 text-gray-600">
+                For urgent matters, please reach out via email, and we will
+                respond as soon as possible. Weekend appointments may be
+                available upon request.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

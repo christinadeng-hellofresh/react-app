@@ -9,7 +9,7 @@ const Team = () => {
 
   return (
     <section
-      className="py-16 flex flex-col items-center md:py-32"
+      className="py-16 flex flex-col items-center bg-gray-100 md:py-32"
       data-aos="fade-right"
     >
       <h3 className="pb-4">{title}</h3>

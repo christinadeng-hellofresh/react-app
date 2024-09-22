@@ -17,11 +17,7 @@ const Rates = () => {
   const navbar = t("navbar", { returnObjects: true });
 
   return (
-    <div
-      className="flex flex-col items-center bg-white py-16 my-10 md:py-56"
-      data-aos="fade-left"
-      data-aos-duration="2000"
-    >
+    <div className="flex flex-col items-center bg-gray-100 py-16 shadow-lg md:py-32">
       <h3 className="pb-3">{navbar.aboutTitle}</h3>
       <div className="flex text-center flex-col md:flex-row">
         {navbar.about.map((item) => (

@@ -43,7 +43,10 @@ const Services = () => {
     });
   };
   return (
-    <div className="relative flex flex-col items-center py-24 relative bg-white shadow-lg relative z-10">
+    <div
+      className="relative flex flex-col items-center py-24 relative bg-white shadow-lg relative z-10"
+      id="services"
+    >
       <h3 className="pb-4">{title}</h3>
       <p className="italic pb-8 antialiased tracking-tight px-8 text-center">
         {subtitle}

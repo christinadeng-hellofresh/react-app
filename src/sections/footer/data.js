@@ -37,11 +37,11 @@ export const footer = {
     { id: 2, link: "#about", title: "中文: 905 -667-6499" },
     { id: 3, link: "#services", title: "Email: info@luklawpc.com" },
     { id: 4, link: "#portfolio", title: "Fax: 905-849-3583" },
-    // {
-    //   id: 5,
-    //   link: "#contact",
-    //   title:
-    //     "HSBC Tower, Liberty Square, 3601 Highway 7, Unit 803, Markham, ON, L3R 0M3",
-    // },
+    {
+      id: 5,
+      link: "#contact",
+      title:
+        "HSBC Tower, Liberty Square, 3601 Highway 7, Unit 803, Markham, ON, L3R 0M3",
+    },
   ],
 };

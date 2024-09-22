@@ -66,7 +66,7 @@ const Nav = () => {
     <Navbar
       fluid
       rounded
-      className={`fixed content-center w-full h-20 top-0 z-50 transition-all duration-700 ${
+      className={`overflow-x-visible fixed content-center w-full h-20 top-0 z-50 transition-all duration-700 ${
         visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
       } bg-white shadow-2xl`}
     >

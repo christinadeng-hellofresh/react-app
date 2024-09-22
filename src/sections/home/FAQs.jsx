@@ -14,15 +14,12 @@ const FAQs = () => {
 
   return (
     <section
-      style={{
-        background: "linear-gradient(to top left, #3C5B6F, #A0C4D8)",
-      }}
-      className="py-16 flex flex-col items-center md:py-40"
+      className="flex flex-col items-center bg-white py-16 shadow-lg md:py-32"
+      data-aos="fade-right"
+      data-aos-duration="2000"
     >
-      <h3 className="text-white pb-4">{t("title")}</h3>
-      <p className="text-white italic pb-8 antialiased tracking-tight">
-        {t("subtitle")}
-      </p>
+      <h3 className="pb-4">{t("title")}</h3>
+      <p className="italic pb-8 antialiased tracking-tight">{t("subtitle")}</p>
       <div
         className="container grid grid-cols-1 gap-y-6 gap-x-16 items-start md:grid-cols-2 md:gap-y-6 md:gap-x-8 sm:gap-4"
         data-aos="fade-in"

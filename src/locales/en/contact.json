@@ -1,0 +1,11 @@
+{
+    "title": "Get In Touch Today",
+    "subtitle": "Experienced, reliable, and professional legal experts in a wide variety of practice areas",
+    "processTitle": "Our Process",
+    "process": [
+        {"title": "Free Initial Consultation", "subtitle": "Schedule a call with staffs"},
+        {"title": "Appointments", "subtitle": "In person or virtual appointment with lawyer * First 15 min for free"},
+        {"title": "Work & Ongoing Communication", "subtitle": "Start on the paper work and provide timeline"},
+        {"title": "Result", "subtitle": "Delivery the best result for our customers"}
+    ]
+}

@@ -8,7 +8,7 @@ const ParallaxSection = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    height: "60vh",
+    height: "40vh",
     position: "relative",
   };
 

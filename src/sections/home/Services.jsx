@@ -44,15 +44,11 @@ const Services = () => {
   };
   return (
     <div
-      className="relative flex flex-col items-center py-24"
-      style={{
-        background: "linear-gradient(to top left, #3C5B6F, #A0C4D8)",
-      }}
+      className="relative flex flex-col items-center py-24 relative bg-white shadow-lg"
+      data-aos="fade-left"
     >
-      <h3 className="pb-4 text-white">{title}</h3>
-      <p className="italic pb-8 antialiased tracking-tight text-white">
-        {subtitle}
-      </p>
+      <h3 className="pb-4">{title}</h3>
+      <p className="italic pb-8 antialiased tracking-tight">{subtitle}</p>
       <button
         onClick={scrollLeft}
         className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full hover:bg-gray-300"
@@ -76,6 +72,7 @@ const Services = () => {
             style={{
               boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
               borderRadius: "15px",
+              background: "linear-gradient(to top left, #3C5B6F, #A0C4D8)",
             }}
           >
             <img

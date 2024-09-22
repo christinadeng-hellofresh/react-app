@@ -3,7 +3,7 @@ import { FaRegFaceLaugh } from "react-icons/fa6";
 
 const Testimonial = ({ testimonial }) => {
   return (
-    <Card className="light">
+    <Card>
       <p className="testimonial_quote">{testimonial.quote}</p>
       <div className="testimonial__client">
         <div className="testimonial__client-avatar">

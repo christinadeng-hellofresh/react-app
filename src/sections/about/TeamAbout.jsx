@@ -32,14 +32,18 @@ const TeamAbout = () => {
   };
 
   return (
-    <section className="flex flex-col items-stretch px-36">
-      <h3 className="pb-4 text-center">{title}</h3>
-      <p className="italic pb-8 antialiased tracking-tight">{subtitle}</p>
+    <section className="flex flex-col items-stretch px-4 md:px-12 lg:px-36 py-8">
+      <h3 className="pb-4 text-center text-2xl md:text-3xl font-bold">
+        {title}
+      </h3>
+      <p className="italic pb-8 antialiased tracking-tight text-center text-sm md:text-lg">
+        {subtitle}
+      </p>
       {team.map((member, index) => (
         <div
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full m-0.5`}
+          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full m-2`}
           style={{
             background: "linear-gradient(to bottom right, #3C5B6F, #A0C4D8)",
           }}
@@ -47,28 +51,29 @@ const TeamAbout = () => {
         >
           <img
             src={images[member.image]}
-            alt="card"
-            className="w-full md:w-1/3 object-contain"
+            alt={member.name}
+            className="w-full md:w-1/2 lg:w-1/3 object-contain"
+            loading="lazy"
           />
 
-          <div className="w-full md:w-2/3 p-16 text-white">
-            <h3 className="text-2xl font-bold mb-4 text-white">
+          <div className="w-full md:w-1/2 lg:w-2/3 p-6 md:p-12 text-white">
+            <h4 className="text-xl md:text-2xl font-bold mb-4 text-white">
               {member.name}
-            </h3>
+            </h4>
             <h5 className="font-semibold mb-4 underline text-white">
               {member.position}
             </h5>
             <div
-              className="text-sm "
+              className="text-sm md:text-base"
               dangerouslySetInnerHTML={{ __html: member.description }}
             />
             {member.education && member.education.length > 0 && (
-              <div className="w-full">
-                <h5 className="font-semibold flex items-center text-white pt-4">
+              <div className="w-full mt-4">
+                <h5 className="font-semibold flex items-center text-white">
                   <HiOutlineAcademicCap className="inline mr-2" />{" "}
                   {heading.education}
                 </h5>
-                <ul className="text-sm mt-2">
+                <ul className="text-sm md:text-base mt-2">
                   {member.education.map((edu, index) => (
                     <li key={index}>{edu}</li>
                   ))}
@@ -76,7 +81,6 @@ const TeamAbout = () => {
               </div>
             )}
           </div>
-          <div className="w-full md:w-1/3 p-8"></div>
         </div>
       ))}
     </section>

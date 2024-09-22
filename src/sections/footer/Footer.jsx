@@ -13,7 +13,7 @@ import {
 const FooterHome = () => {
   const footerData = footer;
   return (
-    <Footer container>
+    <Footer container className="pt-32 pb-8">
       <div className="w-full">
         <div className="flex flex-wrap justify-between">
           <div className="flex flex-col">

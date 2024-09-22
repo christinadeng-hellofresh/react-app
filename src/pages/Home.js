@@ -45,11 +45,11 @@ export default function Home() {
   return (
     <main ref={mainRef}>
       <Header />
-      <Rates />
       <Services />
       <Team />
-      <FAQs />
       <ParallaxSection />
+      <Rates />
+      <FAQs />
       {showFloatingNav && <FloatingNav />}
     </main>
   );

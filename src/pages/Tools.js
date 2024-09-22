@@ -1,4 +1,4 @@
-import Tools from "../sections/tools/Tools";
+import Tools from "../sections/others/Tools";
 
 export default function ToolsPage() {
   return (

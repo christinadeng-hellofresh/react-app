@@ -8,7 +8,10 @@ const Team = () => {
   const team = t("team", { returnObjects: true });
 
   return (
-    <section className="py-16 flex flex-col items-center md:py-32">
+    <section
+      className="py-16 flex flex-col items-center md:py-32"
+      data-aos="fade-right"
+    >
       <h3 className="pb-4">{title}</h3>
       <p className="italic pb-8 antialiased tracking-tight">{subtitle}</p>
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 mx-auto">

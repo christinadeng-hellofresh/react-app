@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Blogs from "../sections/blogs/Blogs";
+import Blogs from "../sections/others/Blogs";
 
 export default function BlogPage() {
   const mainRef = useRef();

@@ -15,7 +15,7 @@ const Tools = () => {
   });
 
   return (
-    <div className="flex flex-col items-center py-32 bg-white shadow-lg relative z-10">
+    <div className="flex flex-col items-center py-32 bg-white shadow-lg relative z-10 overflow-x-visible">
       <div className="hidden md:flex justify-center mb-8">
         {categories.map((category) => (
           <Button

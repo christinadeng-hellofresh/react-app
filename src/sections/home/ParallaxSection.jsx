@@ -1,5 +1,5 @@
 import React from "react";
-import officeImg from "../../assets/office-background.png";
+import officeImg from "../../assets/office.jpeg";
 
 const ParallaxSection = () => {
   const parallaxStyle = {
@@ -8,7 +8,7 @@ const ParallaxSection = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    height: "40vh",
+    height: "60vh",
     position: "relative",
   };
 

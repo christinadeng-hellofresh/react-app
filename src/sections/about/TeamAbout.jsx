@@ -32,7 +32,7 @@ const TeamAbout = () => {
   };
 
   return (
-    <section className="flex flex-col items-stretch px-4 md:px-12 lg:px-36 py-8">
+    <section className="flex flex-col items-stretch px-4 md:px-12 lg:px-36 py-30">
       <h3 className="pb-4 text-center text-2xl md:text-3xl font-bold">
         {title}
       </h3>

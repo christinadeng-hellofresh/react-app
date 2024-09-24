@@ -15,7 +15,7 @@
       },
       "links": [
         { "key": "home", "label": "Home", "url": "/", "icon": "AiOutlineHome"},
-        { "key": "about", "label": "About", "url": "/about", "icon": "AiOutlineInfoCircle"},
+        { "key": "team", "label": "Our Team", "url": "/team", "icon": "AiOutlineTeam"},
         {
           "key": "services",
           "label": "Services",

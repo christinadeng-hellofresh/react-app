@@ -7,7 +7,7 @@
     ],
     "links": [
       { "key": "home", "label": "Home", "url": "/" },
-      { "key": "about", "label": "About", "url": "/about" },
+      { "key": "team", "label": "Our Team", "url": "/team" },
       { "key": "services", "label": "Services",
         "dropdown": [
           { "key": "overview", "label": "Overview", "url": "/services"},

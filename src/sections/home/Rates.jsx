@@ -17,8 +17,15 @@ const Rates = () => {
   const navbar = t("navbar", { returnObjects: true });
 
   return (
-    <div className="flex flex-col items-center justify-center text-center bg-gray-100 py-16 shadow-lg relative z-10 md:py-32">
-      <h3 className="pb-16">{navbar.aboutTitle}</h3>
+    <div
+      className="flex flex-col items-center justify-center text-center text-gray-200 py-16 shadow-lg relative z-10"
+      style={{
+        background: "#3C5B6F",
+      }}
+    >
+      <h3 className="pb-16 text-2xl font-semibold text-center text-gray-200">
+        {navbar.aboutTitle}
+      </h3>
       <div
         className="flex flex-col md:flex-row"
         data-aos="flip-down"
@@ -30,7 +37,7 @@ const Rates = () => {
             <div className="flex items-center justify-center mb-4">
               <span className="about__card-icon">{iconMap[item.icon]}</span>
             </div>
-            <h5 className="pb-2">{item.title}</h5>
+            <h5 className="pb-2 text-gray-200">{item.title}</h5>
             <p className="text-xs antialiased italic">{item.desc}</p>
           </div>
         ))}

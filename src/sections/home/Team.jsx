@@ -8,21 +8,28 @@ const Team = () => {
   const team = t("team", { returnObjects: true });
 
   return (
-    <section
-      className="py-16 flex flex-col items-center bg-gray-100 md:py-32"
+    <div
+      className="flex bg-gray-100 py-24 lg:py-28 shadow-lg relative flex-col lg:flex-row-reverse"
       id="team"
     >
-      <h3 className="pb-4">{title}</h3>
-      <p className="italic pb-8 antialiased tracking-tight">{subtitle}</p>
+      <div className="w-full p-8 flex flex-col justify-center lg:w-1/4 lg:bg-[#3C5B6F] lg:-my-28">
+        <h3 className="text-2xl font-semibold text-center text-gray-800 lg:text-gray-200 mb-2">
+          {title}
+        </h3>
+        <p className="italic mt-4 text-center text-gray-800 lg:text-gray-200 mb-4">
+          {subtitle}
+        </p>
+      </div>
+
       <div
-        className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 mx-auto"
+        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto lg:w-3/4"
         data-aos="fade-right"
       >
         {team.map((member) => (
           <TeamCard key={member.name} member={member} />
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

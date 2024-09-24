@@ -24,11 +24,7 @@ const Header = () => {
   const navbar = t("navbar", { returnObjects: true });
 
   return (
-    <header
-      id="header"
-      data-aos="fade-down"
-      className="relative w-full h-screen overflow-hidden"
-    >
+    <header id="header" className="relative w-full h-screen overflow-hidden">
       <div
         className="absolute top-1/2 left-1/2 w-full h-full bg-cover bg-no-repeat bg-center"
         style={{
@@ -37,27 +33,37 @@ const Header = () => {
         }}
       ></div>
 
-      <div className="relative z-10 flex flex-col text-center items-center w-full h-full justify-center">
-        <h1
-          data-aos="fade-up"
-          className="text-white pb-2 tracking-wide font-medium uppercase"
-        >
-          {navbar.title}
-        </h1>
-        <h2 data-aos="fade-up" className="text-white pb-8 tracking-wide">
-          {navbar.subtitle}
-        </h2>
-        <p data-aos="fade-down" className="text-white italic font-base ">
-          {navbar.desc}
-        </p>
-        <div className="pt-10" data-aos="fade-down">
-          <button
-            target="_blank"
-            href={navbar.googleDoc.url}
-            className="text-sm border-2 border-white border-double p-4 text-white font-extralight"
+      <div
+        className="absolute top-1/2 left-1/2 w-5/6 h-2/3 flex flex-col justify-center items-center opacity-90 bg-[#3C5B6F] transform -translate-x-1/2 -translate-y-1/3
+      md:w-1/2 md:h-full md:translate-x-0 md:translate-y-0 md:top-0 md:left-0"
+      >
+        <div className="text-center">
+          <h1
+            data-aos="zoom-out"
+            className="text-white p-4 tracking-wide font-medium uppercase"
           >
-            {navbar.googleDoc.title}
-          </button>
+            {navbar.title}
+          </h1>
+          <h2
+            data-aos="zoom-out"
+            className="text-white pb-8 tracking-wide text-sm md:text-lg"
+          >
+            {navbar.subtitle}
+          </h2>
+          <p data-aos="fade-up" className="text-white italic font-base ">
+            {navbar.desc}
+          </p>
+          <div className="pt-10" data-aos="fade-up">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={navbar.googleDoc.url}
+              className="text-md border-2 bg-white rounded-lg p-4 text-white font-medium shadow-md transition-transform transform hover:scale-110 hover:shadow-lg"
+              style={{ color: "#3C5B6F" }}
+            >
+              {navbar.googleDoc.title}
+            </a>
+          </div>
         </div>
       </div>
     </header>

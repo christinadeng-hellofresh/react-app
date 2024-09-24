@@ -43,13 +43,13 @@ export default function Home() {
   }, [siteYPostion]);
 
   return (
-    <main ref={mainRef}>
+    <main ref={mainRef} style={{ overflow: "hidden" }}>
       <Header />
-      <Services />
       <Team />
+      <Services />
       <ParallaxSection />
-      <Rates />
       <FAQs />
+      <Rates />
       {showFloatingNav && <FloatingNav />}
     </main>
   );

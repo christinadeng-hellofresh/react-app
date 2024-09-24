@@ -1,15 +1,8 @@
 import AboutImage from "../../assets/about.jpg";
-import data from "./data";
-import Card from "../../components/Card";
 
 const About = () => {
   return (
-    <div
-      className="about__container p-4 md:p-20 w-full min-h-screen"
-      // style={{
-      //   background: "linear-gradient(to top left, #3C5B6F, #A0C4D8)",
-      // }}
-    >
+    <div className="about__container p-4 md:p-20 w-full">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="about__left w-full md:w-1/3 flex justify-center mb-8 md:mb-0">
           <div className="about__portrait w-full md:w-4/5">
@@ -67,19 +60,6 @@ const About = () => {
             Get in touch today
           </button>
         </div>
-      </div>
-
-      <div className="about__cards flex flex-col md:flex-row w-full items-center justify-between mt-8">
-        {data.map((item) => (
-          <Card
-            key={item.id}
-            className="about__card w-full md:w-1/3 mb-4 md:mb-0 md:mr-4 last:mr-0"
-          >
-            <span className="about__card-icon text-3xl mb-2">{item.icon}</span>
-            <h5 className="text-lg font-semibold">{item.title}</h5>
-            <small className="text-sm">{item.desc}</small>
-          </Card>
-        ))}
       </div>
     </div>
   );

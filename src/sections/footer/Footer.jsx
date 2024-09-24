@@ -2,13 +2,7 @@ import { footer } from "./data";
 import "./footer.css";
 
 import { Footer } from "flowbite-react";
-import {
-  BsDribbble,
-  BsFacebook,
-  BsGithub,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
+import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const FooterHome = () => {
   const footerData = footer;

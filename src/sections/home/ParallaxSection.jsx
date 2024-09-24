@@ -2,28 +2,19 @@ import React from "react";
 import officeImg from "../../assets/office.jpeg";
 
 const ParallaxSection = () => {
-  const parallaxStyle = {
-    backgroundImage: `url(${officeImg})`, // Replace with your image path
-    backgroundAttachment: "fixed",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    height: "60vh",
-    position: "relative",
-  };
-
-  const contentStyle = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    textAlign: "center",
-    color: "#fff",
-  };
-
   return (
-    <section style={parallaxStyle}>
-      <div style={contentStyle} className="flex flex-col items-center"></div>
+    <section className="relative overflow-hidden h-[40vh] sm:h-[60vh]">
+      <div
+        className={`absolute inset-0 bg-cover bg-center transition-all duration-300 ${
+          window.innerWidth < 768 ? "bg-no-repeat" : "bg-fixed"
+        }`}
+        style={{
+          backgroundImage: `url(${officeImg})`,
+          height: "100%",
+          filter: "brightness(0.7)",
+        }}
+      ></div>
+      <div className="relative z-10 flex flex-col items-center justify-center h-full"></div>
     </section>
   );
 };

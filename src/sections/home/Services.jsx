@@ -44,7 +44,10 @@ const Services = () => {
   };
 
   return (
-    <div className="flex h-auto shadow-lg relative z-10 flex-col lg:flex-row py-24 lg:py-48">
+    <div
+      className="flex h-auto shadow-lg relative z-10 flex-col lg:flex-row py-24 lg:py-48"
+      id="services"
+    >
       <div className="w-full lg:w-1/4 p-8 flex flex-col justify-center lg:-my-48 lg:bg-[#3C5B6F]">
         <h3 className="text-2xl font-semibold text-center text-gray-800 lg:text-gray-200">
           {title}

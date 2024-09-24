@@ -1,9 +1,9 @@
-
-
-const Nav = ({className, item}) => {
+const Nav = ({ className, item }) => {
   return (
-    <li className={className}><a href={item.link}>{item.icon}</a></li>
-  )
-}
+    <li className={className}>
+      <a href={item.link}>{item.icon}</a>
+    </li>
+  );
+};
 
-export default Nav
+export default Nav;

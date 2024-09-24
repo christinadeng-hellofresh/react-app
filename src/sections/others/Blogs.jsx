@@ -8,8 +8,11 @@ const Blogs = () => {
   return (
     <section
       id="blogs"
-      className="flex justify-center items-center shadow-lg relative z-10"
+      className="flex justify-center items-center shadow-lg relative z-10 flex-col"
     >
+      <h3 className="text-2xl text-center text-gray-800 py-8 font-semibold">
+        {t("blogTitle")}
+      </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 p-8">
         {blogs.map((blog) => (
           <div

@@ -13,7 +13,7 @@ const Team = () => {
       id="team"
     >
       <div className="w-full p-8 flex flex-col justify-center lg:w-1/4 lg:bg-[#3C5B6F] lg:-my-28">
-        <h3 className="text-2xl font-semibold text-center text-gray-800 lg:text-gray-200 mb-2">
+        <h3 className="text-2xl text-center text-gray-800 lg:text-gray-200 mb-2 font-semibold">
           {title}
         </h3>
         <p className="italic mt-4 text-center text-gray-800 lg:text-gray-200 mb-4">

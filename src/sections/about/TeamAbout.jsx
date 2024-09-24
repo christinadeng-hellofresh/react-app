@@ -32,20 +32,20 @@ const TeamAbout = () => {
   };
 
   return (
-    <section className="flex flex-col items-stretch px-4 md:px-12 lg:px-36 py-30">
-      <h3 className="pb-4 text-center text-2xl md:text-3xl font-bold">
+    <div className="flex flex-col items-stretch md:px-10 pt-40 shadow-lg">
+      <h3 className="text-2xl text-center text-gray-800 mb-2 font-semibold">
         {title}
       </h3>
-      <p className="italic pb-8 antialiased tracking-tight text-center text-sm md:text-lg">
+      <p className="italic mt-4 text-center text-gray-800 mb-4 pb-16 px-10">
         {subtitle}
       </p>
       {team.map((member, index) => (
         <div
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full m-2`}
+          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full md:m-1`}
           style={{
-            background: "linear-gradient(to bottom right, #3C5B6F, #A0C4D8)",
+            background: "#3C5B6F",
           }}
           key={member.name}
         >
@@ -56,11 +56,11 @@ const TeamAbout = () => {
             loading="lazy"
           />
 
-          <div className="w-full md:w-1/2 lg:w-2/3 p-6 md:p-12 text-white">
-            <h4 className="text-xl md:text-2xl font-bold mb-4 text-white">
+          <div className="w-full md:w-1/2 lg:w-2/3 p-6 md:p-12 text-gray-200">
+            <h4 className="text-xl md:text-2xl font-bold mb-4 text-gray-200">
               {member.name}
             </h4>
-            <h5 className="font-semibold mb-4 underline text-white">
+            <h5 className="font-semibold mb-4 underline text-gray-200">
               {member.position}
             </h5>
             <div
@@ -83,7 +83,7 @@ const TeamAbout = () => {
           </div>
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 

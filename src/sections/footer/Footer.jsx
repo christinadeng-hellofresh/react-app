@@ -76,9 +76,8 @@ const FooterHome = () => {
           </div>
         </div>
 
-        {/* Social Icons Section */}
         <div className="w-full pt-8 flex justify-start space-x-8">
-          {[BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble].map(
+          {[BsFacebook, BsInstagram, BsTwitter, BsDribbble].map(
             (Icon, index) => (
               <Footer.Icon
                 href="#"

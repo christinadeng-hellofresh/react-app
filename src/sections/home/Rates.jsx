@@ -23,7 +23,7 @@ const Rates = () => {
         background: "#3C5B6F",
       }}
     >
-      <h3 className="pb-16 text-2xl font-semibold text-center text-gray-200">
+      <h3 className="pb-16 text-2xl text-center text-gray-200 font-semibold">
         {navbar.aboutTitle}
       </h3>
       <div

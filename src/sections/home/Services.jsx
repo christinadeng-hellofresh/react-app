@@ -49,7 +49,7 @@ const Services = () => {
       id="services"
     >
       <div className="w-full lg:w-1/4 p-8 flex flex-col justify-center lg:-my-48 lg:bg-[#3C5B6F]">
-        <h3 className="text-2xl font-semibold text-center text-gray-800 lg:text-gray-200">
+        <h3 className="text-2xl text-center text-gray-800 lg:text-gray-200 font-semibold">
           {title}
         </h3>
         <p className="italic mt-4 text-center text-gray-800 lg:text-gray-200">

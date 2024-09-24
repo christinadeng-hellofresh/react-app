@@ -17,8 +17,12 @@ const FAQs = () => {
       className="flex flex-col items-center bg-white py-16 shadow-lg md:py-32"
       id="faqs"
     >
-      <h3 className="pb-4">{t("title")}</h3>
-      <p className="italic pb-8 antialiased tracking-tight">{t("subtitle")}</p>
+      <h3 className="text-2xl font-semibold text-center text-gray-800">
+        {t("title")}
+      </h3>
+      <p className="italic mt-4 text-center text-gray-800 pb-16">
+        {t("subtitle")}
+      </p>
       <div
         className="container grid grid-cols-1 gap-y-6 gap-x-16 items-start md:grid-cols-2 md:gap-y-6 md:gap-x-8 sm:gap-4"
         data-aos="fade-up"

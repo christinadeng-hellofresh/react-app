@@ -3,7 +3,7 @@ import Intro from "../sections/Intro/Intro";
 
 export default function ServicesPage() {
   return (
-    <main className="pt-16">
+    <main className="pt-16 overflow-x-hidden">
       <Intro />
       <Services />
     </main>

@@ -29,8 +29,70 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Process Section */}
-      <div className="w-full py-32 shadow-lg relative z-10 bg-gray-100 overflow-x-scroll">
+      <div className="w-full py-24 shadow-lg relative z-10 bg-gray-100">
+        <h2 className="text-center text-2xl font-semibold mb-8 p-8">
+          Office Hours
+        </h2>
+        <div className="flex justify-center">
+          <div className="w-full max-w-6xl rounded-lg flex flex-col lg:flex-row">
+            <div className="w-full lg:w-3/5 shadow-md">
+              <Table className="text-center">
+                <Table.Head>
+                  <Table.HeadCell
+                    className="text-white"
+                    style={{ background: "#3C5B6F" }}
+                  >
+                    Day
+                  </Table.HeadCell>
+                  <Table.HeadCell
+                    className="text-white"
+                    style={{ background: "#3C5B6F" }}
+                  >
+                    Office Hours
+                  </Table.HeadCell>
+                </Table.Head>
+                <Table.Body className="divide-y text-sm tracking-widest font-semibold">
+                  {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].map(
+                    (day) => (
+                      <Table.Row key={day}>
+                        <Table.Cell>{day}</Table.Cell>
+                        <Table.Cell>10:00 AM - 6:00 PM</Table.Cell>
+                      </Table.Row>
+                    )
+                  )}
+                  <Table.Row>
+                    <Table.Cell>Saturday</Table.Cell>
+                    <Table.Cell>By appointment only</Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>Sunday</Table.Cell>
+                    <Table.Cell>By appointment only</Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </div>
+
+            <div className="w-full lg:w-2/5 pl-10">
+              <img
+                src={officeHour}
+                alt="A welcoming office space for consultations"
+                className="w-full rounded-md mb-4 sm:pt-10 md:pt-0"
+              />
+              <p className="text-gray-600">
+                If you would like to visit us in person for legal consultation,
+                please call us to book an appointment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-gray-600 text-center pt-10 italic">
+          Holiday hours may vary. Closed Monday, October 14, 2024, for
+          Thanksgiving Holiday.
+        </p>
+      </div>
+
+      <div className="w-full py-40 shadow-lg relative z-10 overflow-x-scroll">
         <h2 className="text-center text-2xl font-semibold mb-8 p-8">
           Our Process
         </h2>
@@ -137,71 +199,6 @@ const Contact = () => {
             </Timeline.Item>
           </Timeline>
         </div>
-      </div>
-
-      <div className="w-full py-24 shadow-lg relative z-10">
-        <h2 className="text-center text-2xl font-semibold mb-8 p-8">
-          Office Hours
-        </h2>
-        <div className="flex justify-center">
-          <div className="w-full max-w-6xl bg-white rounded-lg p-8 flex flex-col lg:flex-row">
-            {/* Office Hours Table Column */}
-            <div className="w-full lg:w-2/3 pr-4">
-              <Table>
-                <Table.Head>
-                  <Table.HeadCell
-                    className="text-white"
-                    style={{ background: "#3C5B6F" }}
-                  >
-                    Day
-                  </Table.HeadCell>
-                  <Table.HeadCell
-                    className="text-white"
-                    style={{ background: "#3C5B6F" }}
-                  >
-                    Office Hours
-                  </Table.HeadCell>
-                </Table.Head>
-                <Table.Body className="divide-y">
-                  {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].map(
-                    (day) => (
-                      <Table.Row key={day}>
-                        <Table.Cell>{day}</Table.Cell>
-                        <Table.Cell>10:00 AM - 6:00 PM</Table.Cell>
-                      </Table.Row>
-                    )
-                  )}
-                  <Table.Row>
-                    <Table.Cell>Saturday</Table.Cell>
-                    <Table.Cell>By appointment only</Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>Sunday</Table.Cell>
-                    <Table.Cell>By appointment only</Table.Cell>
-                  </Table.Row>
-                </Table.Body>
-              </Table>
-            </div>
-
-            <div className="w-full lg:w-1/3 pl-4">
-              <img
-                src={officeHour}
-                alt="A welcoming office space for consultations"
-                className="w-full rounded mb-4 sm:pt-10 md:pt-0"
-              />
-              <p className="text-gray-600">
-                If you would like to visit us in person for legal consultation,
-                please call us to book an appointment.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Full Width Holiday Hours Notification */}
-        <p className="mt-4 text-gray-600 text-center px-6">
-          Holiday hours may vary. Closed Monday, October 14, 2024, for
-          Thanksgiving Holiday.
-        </p>
       </div>
     </div>
   );

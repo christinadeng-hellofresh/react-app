@@ -1,11 +1,34 @@
-import { footer } from "./data";
-import "./footer.css";
-
 import { Footer } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import disclaimerLogo from "../../assets/disclaimer-logo.png";
 
 const FooterHome = () => {
-  const footerData = footer;
+  const footer = {
+    icon: disclaimerLogo,
+    corporation: "© 2024 by Raymond Luk Law Professional Corporation ",
+    disclaimer:
+      "DISCLAIMER: The information obtained on this site is not intended to be legal advice. Please consult a legal professional for advice regarding your individual situation. Please be advised that contacting the firm does not create a solicitor-client nor a legal relationship of any kind. Please do not send any confidential information until such relationship has been established and a retainer has been signed",
+    services: [
+      { service: "Real Estate Law", link: "" },
+      { service: "Family Law", link: "" },
+      { service: "Will & Estates", link: "" },
+      { service: "Personal Injury Law", link: "" },
+      { service: "Immigration Law", link: "" },
+      { service: "Notary Services", link: "" },
+    ],
+    contacts: [
+      { id: 1, link: "#", title: "English: 905-667-6496" },
+      { id: 2, link: "#about", title: "中文: 905 -667-6499" },
+      { id: 3, link: "#services", title: "Email: info@luklawpc.com" },
+      { id: 4, link: "#portfolio", title: "Fax: 905-849-3583" },
+      {
+        id: 5,
+        link: "#contact",
+        title:
+          "HSBC Tower, Liberty Square, 3601 Highway 7, Unit 803, Markham, ON, L3R 0M3",
+      },
+    ],
+  };
 
   return (
     <Footer
@@ -14,19 +37,15 @@ const FooterHome = () => {
       id="footer"
     >
       <div className="w-full">
-        {/* Main Flex Container for Brand, Map, and Contact/Services */}
         <div className="flex flex-wrap md:flex-nowrap justify-between gap-8">
-          {/* Brand and Map Section */}
           <div className="flex flex-col md:w-1/3 w-full space-y-6">
-            {/* Brand Logo */}
             <div className="flex-shrink-0">
               <Footer.Brand
-                src={footerData.icon}
+                src={footer.icon}
                 alt="Law Society"
                 className="max-w-xs h-auto"
               />
             </div>
-            {/* Map */}
             <div className="rounded-lg overflow-hidden shadow-lg">
               <iframe
                 title="map"
@@ -37,30 +56,26 @@ const FooterHome = () => {
               ></iframe>
             </div>
           </div>
-
-          {/* Contact and Services Section */}
           <div
             className="flex flex-col md:flex-row w-full md:w-2/5 space-y-6 md:space-y-0 md:space-x-12"
             style={{
               color: "#3C5B6F",
             }}
           >
-            {/* Contact Us */}
             <div className="flex-grow sm:w-3/5">
               <Footer.Title title="Contact Us" className="underline" />
               <Footer.LinkGroup col>
-                {footerData.contacts.map((item) => (
+                {footer.contacts.map((item) => (
                   <Footer.Link href="#" key={item.title}>
                     {item.title}
                   </Footer.Link>
                 ))}
               </Footer.LinkGroup>
             </div>
-            {/* Areas of Practice */}
             <div className="flex-grow sm:w-2/5">
               <Footer.Title title="Areas of Practice" className="underline" />
               <Footer.LinkGroup col>
-                {footerData.services.map((item) => (
+                {footer.services.map((item) => (
                   <Footer.Link href="#" key={item.service}>
                     {item.service}
                   </Footer.Link>
@@ -84,11 +99,9 @@ const FooterHome = () => {
             )
           )}
         </div>
-
-        {/* Footer Text */}
         <div className="w-full text-gray-500 mt-4">
-          <p>{footerData.corporation}</p>
-          <p className="text-sm">{footerData.disclaimer}</p>
+          <p>{footer.corporation}</p>
+          <p className="text-sm">{footer.disclaimer}</p>
         </div>
       </div>
     </Footer>

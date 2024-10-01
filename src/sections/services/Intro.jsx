@@ -1,6 +1,6 @@
 const Intro = () => {
   return (
-    <div className="p-20 md:p-32 lg:p-64 flex flex-col items-center">
+    <div className="p-20 md:p-32 lg:p-64 flex flex-col items-center shadow-lg relative z-10">
       <h2 className="pb-10">We are here to help you</h2>
       <p className="text-md font-medium">
         Luk Law is a service law firm dedicated to providing personalized,

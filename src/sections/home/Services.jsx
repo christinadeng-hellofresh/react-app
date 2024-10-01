@@ -5,13 +5,13 @@ import {
   AiOutlineRight,
   AiOutlineCheckCircle,
 } from "react-icons/ai";
-import realEstateLawImg from "../../assets/real-estate.jpg";
-import familyLawImg from "../../assets/family-law.jpg";
-import willImg from "../../assets/will.jpg";
-import personalInjuryImg from "../../assets/personal-injury.png";
-import immigrationImg from "../../assets/immigration.jpg";
-import corporateLawImg from "../../assets/corporate-law.jpg";
-import otherServicesImg from "../../assets/other-services.jpg";
+import realEstateLawImg from "../../assets/service/real-estate.jpg";
+import familyLawImg from "../../assets/service/family-law.jpg";
+import willImg from "../../assets/service/will.jpg";
+import personalInjuryImg from "../../assets/service/personal-injury.png";
+import immigrationImg from "../../assets/service/immigration.jpg";
+import corporateLawImg from "../../assets/service/corporate-law.jpg";
+import otherServicesImg from "../../assets/service/other-services.jpg";
 
 const images = {
   "real-estate.jpg": realEstateLawImg,
@@ -76,31 +76,43 @@ const Services = () => {
             <a
               href={service.path}
               key={index}
-              className="block w-full sm:w-96 shadow-lg rounded-lg flex-shrink-0 transition-transform duration-300 ease-in-out hover:-translate-y-2"
+              className="block w-full sm:w-96 shadow-lg rounded-lg flex-shrink-0 transition-transform duration-300 ease-in-out hover:-translate-y-2 opacity-90"
               style={{
                 boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
                 borderRadius: "15px",
-                background: "#3C5B6F",
+                height: "450px",
               }}
             >
-              <img
-                src={images[service.imageSrc]}
-                alt={service.title}
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
-              <div className="p-4">
-                <h4 className="font-semibold text-gray-200">{service.title}</h4>
-                <ul className="text-sm mt-2 text-gray-200">
-                  {service.tabs.map((tab, i) => (
-                    <li
-                      key={i}
-                      className="tracking-wide py-1 font-light flex flex-row items-center"
-                    >
-                      <AiOutlineCheckCircle />
-                      <span className="pl-2">{tab.label}</span>
-                    </li>
-                  ))}
-                </ul>
+              <div className="flex flex-col h-full">
+                <img
+                  src={images[service.imageSrc]}
+                  alt={service.title}
+                  className="w-full h-44 object-cover rounded-t-lg opacity-80"
+                />
+                <div className="py-4 px-8 flex flex-col flex-grow justify-between">
+                  <div>
+                    <h4 className="font-semibold text-gray-800">
+                      {service.title}
+                    </h4>
+                    <ul className="text-sm mt-2 text-gray-800">
+                      {service.tabs.map((tab, i) => (
+                        <li
+                          key={i}
+                          className="tracking-wide py-1 flex flex-row items-center"
+                        >
+                          <AiOutlineCheckCircle size={20} />{" "}
+                          <span className="pl-2">{tab.label}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <button
+                    className="mt-4 bg-[#3C5B6F] text-white py-2 px-4 rounded hover:bg-opacity-90"
+                    onClick={() => (window.location.href = service.path)}
+                  >
+                    Learn More
+                  </button>
+                </div>
               </div>
             </a>
           ))}

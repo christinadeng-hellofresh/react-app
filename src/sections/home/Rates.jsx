@@ -12,7 +12,6 @@ const iconMap = {
 };
 
 const Rates = () => {
-  // Language
   const { t } = useTranslation("navbar");
   const navbar = t("navbar", { returnObjects: true });
 
@@ -33,7 +32,6 @@ const Rates = () => {
       >
         {navbar.about.map((item) => (
           <div key={item.title} className="my-6 md:mx-10 lg:mx-20">
-            {/* Wrapping the icon with a div and using Flexbox to center */}
             <div className="flex items-center justify-center mb-4">
               <span className="about__card-icon">{iconMap[item.icon]}</span>
             </div>

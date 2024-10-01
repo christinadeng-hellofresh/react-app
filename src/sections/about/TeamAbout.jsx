@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { HiOutlineAcademicCap } from "react-icons/hi";
-import raymondLukImg from "../../assets/raymond-luk.jpg";
-import eimanSharifpourImg from "../../assets/eiman-sharifpour.jpeg";
-import christineGuanImg from "../../assets/christine-guan.jpg";
-import rebeccaTsuiImg from "../../assets/rebecca-tsui.jpg";
-import mandyZhaoImg from "../../assets/mandy-zhao.jpg";
-import emmaJaneImg from "../../assets/emma-jane.jpg";
-import jessicaChenImg from "../../assets/jessica-chen.jpg";
-import angelaTsuiImg from "../../assets/angela-tsui.jpg";
-import rachelChanImg from "../../assets/rachel-chan.jpg";
-import camilaSuImg from "../../assets/camila-su.jpg";
+import raymondLukImg from "../../assets/team/raymond-luk.jpg";
+import eimanSharifpourImg from "../../assets/team/eiman-sharifpour.jpg";
+import christineGuanImg from "../../assets/team/christine-guan.jpg";
+import rebeccaTsuiImg from "../../assets/team/rebecca-tsui.jpg";
+import mandyZhaoImg from "../../assets/team/mandy-zhao.jpg";
+import emmaJaneImg from "../../assets/team/emma-jane.jpg";
+import jessicaChenImg from "../../assets/team/jessica-chen.jpg";
+import angelaTsuiImg from "../../assets/team/angela-tsui.jpg";
+import rachelChanImg from "../../assets/team/rachel-chan.jpg";
+import camilaSuImg from "../../assets/team/camila-su.jpg";
 
 const TeamAbout = () => {
   const { t } = useTranslation("team");
@@ -32,7 +32,7 @@ const TeamAbout = () => {
   };
 
   return (
-    <div className="flex flex-col items-stretch md:px-10 pt-40 shadow-lg">
+    <div className="flex flex-col items-stretch pt-40 shadow-lg">
       <h3 className="text-2xl text-center text-gray-800 mb-2 font-semibold">
         {title}
       </h3>
@@ -43,7 +43,7 @@ const TeamAbout = () => {
         <div
           className={`flex flex-col ${
             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full md:m-1`}
+          } items-center md:items-start border border-gray-200 overflow-hidden shadow-lg w-full md:m-2`}
           style={{
             background: "#3C5B6F",
           }}

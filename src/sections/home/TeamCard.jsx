@@ -7,16 +7,16 @@ import {
   HiOutlineIdentification,
 } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
-import raymondLukImg from "../../assets/raymond-luk.jpg";
-import eimanSharifpourImg from "../../assets/eiman-sharifpour.jpeg";
-import christineGuanImg from "../../assets/christine-guan.jpg";
-import rebeccaTsuiImg from "../../assets/rebecca-tsui.jpg";
-import mandyZhaoImg from "../../assets/mandy-zhao.jpg";
-import emmaJaneImg from "../../assets/emma-jane.jpg";
-import jessicaChenImg from "../../assets/jessica-chen.jpg";
-import angelaTsuiImg from "../../assets/angela-tsui.jpg";
-import rachelChanImg from "../../assets/rachel-chan.jpg";
-import camilaSuImg from "../../assets/camila-su.jpg";
+import raymondLukImg from "../../assets/team/raymond-luk.jpg";
+import eimanSharifpourImg from "../../assets/team/eiman-sharifpour.jpg";
+import christineGuanImg from "../../assets/team/christine-guan.jpg";
+import rebeccaTsuiImg from "../../assets/team/rebecca-tsui.jpg";
+import mandyZhaoImg from "../../assets/team/mandy-zhao.jpg";
+import emmaJaneImg from "../../assets/team/emma-jane.jpg";
+import jessicaChenImg from "../../assets/team/jessica-chen.jpg";
+import angelaTsuiImg from "../../assets/team/angela-tsui.jpg";
+import rachelChanImg from "../../assets/team/rachel-chan.jpg";
+import camilaSuImg from "../../assets/team/camila-su.jpg";
 
 const TeamCard = ({ member }) => {
   const { t } = useTranslation("team");
@@ -70,7 +70,7 @@ const TeamCard = ({ member }) => {
           {heading.meet} {member.name.split(" ")[0]}
         </Modal.Header>
         <Modal.Body className="flex justify-center shadow-2xl rounded-lg p-4 max-h-screen overflow-y-auto w-full">
-          <div className="w-full max-w-full md:max-w-[500px] border border-blue-500 rounded-lg md:shadow-lg p-4">
+          <div className="w-full max-w-full md:max-w-[500px] border border-blue-500 rounded-lg p-4">
             <div className="flex flex-col items-center pb-4">
               <img
                 className="w-3/4 h-3/4 md:w-1/3 md:h-1/3 mb-3 rounded-full shadow-lg border-2 border-white"

@@ -1,9 +1,12 @@
+import { useRef } from "react";
 import Services from "../sections/home/Services";
-import Intro from "../sections/Intro/Intro";
+import Intro from "../sections/services/Intro";
 
 export default function ServicesPage() {
+  const mainRef = useRef();
+
   return (
-    <main className="pt-16 overflow-x-hidden">
+    <main ref={mainRef} style={{ overflow: "hidden" }}>
       <Intro />
       <Services />
     </main>

@@ -1,4 +1,4 @@
-import Testimonials from "../sections/testimonials/Testimonials";
+import Testimonials from "../sections/about/Testimonials";
 import TeamAbout from "../sections/about/TeamAbout";
 import { useRef } from "react";
 

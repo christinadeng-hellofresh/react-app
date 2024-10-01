@@ -1,7 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./sections/home/Navbar";
-import FooterHome from "./sections/footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "flowbite/dist/flowbite.css";
+import Navbar from "./sections/navigation/Navbar";
+import FooterHome from "./sections/navigation/Footer";
 import Home from "./pages/Home";
 import ServicesPage from "./pages/Services";
 import BlogPage from "./pages/Blogs";
@@ -11,6 +15,10 @@ import LawPage from "./pages/Law";
 import ToolsPage from "./pages/Tools";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <Router>
       <Navbar />

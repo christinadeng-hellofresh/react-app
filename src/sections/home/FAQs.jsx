@@ -1,14 +1,7 @@
-import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import FAQ from "./FAQ";
 
 const FAQs = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  });
-
   const { t } = useTranslation("faqs");
   const faqs = t("faqs", { returnObjects: true });
 

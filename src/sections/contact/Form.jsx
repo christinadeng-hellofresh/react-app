@@ -1,11 +1,19 @@
 import { Label, TextInput, Textarea, Button } from "flowbite-react";
+import { HiMail, HiUser } from "react-icons/hi";
 
 const Form = () => {
   return (
-    <form className="flex flex-col gap-4">
+    <form className="flex flex-col gap-4 p-4 w-full mx-auto">
       <div>
         <Label htmlFor="name" value="Your Name" />
-        <TextInput id="name" type="text" placeholder="Raymond Luk" required />
+        <TextInput
+          id="name"
+          type="text"
+          placeholder="Raymond Luk"
+          required
+          className="mt-2 w-full"
+          rightIcon={HiUser}
+        />
       </div>
 
       <div>
@@ -15,7 +23,24 @@ const Form = () => {
           type="email"
           placeholder="name@example.com"
           required
+          className="mt-2 w-full"
+          rightIcon={HiMail}
         />
+      </div>
+
+      <div>
+        <Label htmlFor="inquiry" value="Reason for Inquiry" />
+        <select
+          id="inquiry"
+          required
+          className="mt-2 p-2.5 w-full border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="">Select a reason</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Support Request</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
       </div>
 
       <div>
@@ -24,13 +49,15 @@ const Form = () => {
           id="message"
           placeholder="Enter your message here..."
           required
+          rows={8}
+          className="mt-2 w-full"
         />
       </div>
 
       <Button
         type="submit"
+        className="mt-4 w-full shadow-lg"
         style={{
-          boxShadow: "0 10px 20px rgba(0, 0, 0, 0.3)",
           background:
             "linear-gradient(to top left, rgb(14, 116, 144), rgb(10, 85, 105))",
         }}

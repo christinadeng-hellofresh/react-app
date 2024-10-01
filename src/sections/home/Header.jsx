@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import homepage from "../../assets/homepage.png";
 
 const Header = () => {
@@ -12,7 +10,6 @@ const Header = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
     window.addEventListener("scroll", handleScroll);
 
     return () => {

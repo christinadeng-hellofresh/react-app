@@ -39,7 +39,7 @@ export function Service() {
           <img
             src={images[service.imageSrc]}
             alt={service.title}
-            className="w-72 h-72 object-cover rounded-full shadow-lg mx-auto"
+            className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-lg mx-auto"
           />
         </div>
       </div>
